@@ -15,8 +15,6 @@ import (
 	"golang.org/x/tools/go/packages"
 )
 
-const pkgLoadMode = packages.NeedTypes | packages.NeedSyntax | packages.NeedTypesInfo
-
 func init() {
 	log.SetFlags(0)
 }

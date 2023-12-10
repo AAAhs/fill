@@ -11,6 +11,8 @@ import (
 	"golang.org/x/tools/go/packages"
 )
 
+const pkgLoadMode = packages.NeedTypes | packages.NeedSyntax | packages.NeedTypesInfo
+
 func PrepareOutput(n ast.Node, lines int) (string, error) {
 	fset := token.NewFileSet()
 	file := fset.AddFile("", -1, lines)
